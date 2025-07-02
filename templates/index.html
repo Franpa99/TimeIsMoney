@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>TimeIsMoney</title>
+        <style>
+            body { font-family: Arial, sans-serif; padding: 2rem; background: #f4f4f4; }
+            form { background: #fff; padding: 2rem; border-radius: 8px; max-width: 500px; margin: auto; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+            input, select, button { width: 100%; padding: 0.75rem; margin-bottom: 1rem; }
+            h1 { text-align: center; }
+        </style>
+    </head>
+    <body>
+        <h1>TimeIsMoney</h1>
+        <form method="POST" action="/convert">
+            <label>Monto:</label>
+            <input type="number" step="any" name="amount" required>
+
+            <label>Moneda de origen:</label>
+            <select name="from_currency">
+                <option value="UYU">UYU</option>
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="ARS">ARS</option>
+            </select>
+
+            <label>Año de origen:</label>
+            <input type="number" name="from_year" value="2025" required>
+
+            <label>Moneda de destino:</label>
+            <select name="to_currency">
+                <option value="UYU">UYU</option>
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="ARS">ARS</option>
+            </select>
+
+            <label>Año de destino:</label>
+            <input type="number" name="to_year" value="1899" required>
+
+            <button type="submit">Convertir</button>
+        </form>
+    </body>
+</html>

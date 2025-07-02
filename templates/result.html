@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Resultado - ChronoConverter</title>
+        <style>
+            body { font-family: Arial, sans-serif; padding: 2rem; background: #f4f4f4; }
+            .container { background: #fff; padding: 2rem; border-radius: 8px; max-width: 500px; margin: auto; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+            h1 { text-align: center; }
+            .result { font-size: 1.5rem; text-align: center; margin-top: 2rem; }
+            a { display: block; text-align: center; margin-top: 1rem; color: #007bff; text-decoration: none; }
+            a:hover { text-decoration: underline; }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Resultado</h1>
+            <div class="result">
+                <p><strong>{{ original_amount }} {{ from_currency }}</strong> en el año <strong>{{ from_year }}</strong> equivale aproximadamente a:</p>
+                <p><strong>{{ result }} {{ to_currency }}</strong> en el año <strong>{{ to_year }}</strong>.</p>
+            </div>
+            <a href="/">← Hacer otra conversión</a>
+        </div>
+    </body>
+</html>
